@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Irfan Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',
+            secondary: '#10B981',
+            light: '#F9FAFB',
+            text: '#111827',
+            accent: '#F59E0B',
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light text-text font-sans">
+  <div id="navbar" class="fixed top-0 left-0 right-0 z-50"></div>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white py-20 text-center" data-aos="fade-down">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Crafting Digital Experiences</h1>
+    <p class="max-w-2xl mx-auto text-lg text-light">
+      Explore a curated collection of my fullstack and frontend projects built with passion and precision. Each piece reflects thoughtful UX and scalable code.
+    </p>
+  </header>
+
+  <!-- Projects Section -->
+  <main id="projects" class="py-16 px-4 max-w-6xl mx-auto space-y-14">
+
+    <!-- Billing Project -->
+    <section class="bg-white shadow-md rounded-xl overflow-hidden md:flex gap-6 p-6" data-aos="fade-up">
+      <img src="assets/InfoparkLogo.jpg" alt="Billing App Screenshot"
+           class="w-full md:w-1/3 h-64 object-contain bg-white p-2 rounded-lg">
+      <div class="flex-1 mt-4 md:mt-0">
+        <h2 class="text-2xl font-semibold text-primary mb-2">Billing & Inventory Management System</h2>
+        <p class="text-text mb-4">
+          A full-featured system developed for Info Park to manage billing, sales, inventory, and reporting — helping streamline day-to-day business processes.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4 text-sm text-gray-700">
+          <div class="flex items-center"><span class="text-secondary font-semibold mr-1">•</span> Add Purchases & Sales</div>
+          <div class="flex items-center"><span class="text-secondary font-semibold mr-1">•</span> Purchase & Sales Return</div>
+          <div class="flex items-center"><span class="text-secondary font-semibold mr-1">•</span> Stock & Product Reports</div>
+          <div class="flex items-center"><span class="text-secondary font-semibold mr-1">•</span> Day Closing Summary</div>
+          <div class="flex items-center"><span class="text-secondary font-semibold mr-1">•</span> Dashboard Overview</div>
+          <div class="flex items-center"><span class="text-secondary font-semibold mr-1">•</span> Filtering & Pagination</div>
+        </div>
+        <p class="text-sm text-gray-600"><span class="font-semibold">Tech Stack:</span> Django, Python, SQLite, Tailwind CSS, HTML, JavaScript</p>
+      </div>
+    </section>
+<!-- Gym PWA Section -->
+<section class="bg-white shadow-md rounded-xl overflow-hidden md:flex gap-6 p-6" data-aos="fade-up" data-aos-delay="100">
+  <!-- Image -->
+  <div class="md:w-1/3 w-full">
+    <img src="assets/bullslogo.png" alt="Gym PWA Screenshot"
+         class="w-full h-full object-contain bg-white p-4 rounded-lg">
+  </div>
+
+  <!-- Content -->
+  <div class="flex-1 mt-6 md:mt-0">
+    <h2 class="text-2xl font-semibold text-primary mb-3">Gym Progressive Web App</h2>
+    <p class="text-text mb-5">
+      A robust Progressive Web App designed for managing gym operations and enhancing member engagement. It features dual-role access — <strong>Admin</strong> and <strong>Member</strong> — to ensure smooth communication, performance tracking, and subscription handling with a modern UI and offline-ready capabilities.
+    </p>
+
+    <!-- Features -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-sm text-gray-700 mb-4">
+      <!-- Admin Features -->
+      <div class="col-span-2 font-semibold text-gray-900 border-b border-gray-200 pb-1 mb-1">Admin Features</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Secure Admin Login</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Dashboard Overview</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Add Members with Login Credentials</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Member List Management</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Assign Workout Plans</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Manual Approval System</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Push Notifications</div>
+
+      <!-- Member Features -->
+      <div class="col-span-2 font-semibold text-gray-900 border-b border-gray-200 pt-4 pb-1 mb-1 mt-2">Member Features</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Member Login (Admin Generated)</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Personalized Dashboard</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Workout Plan Access</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Payment Request System</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Real-time Notifications</div>
+      <div class="flex items-start"><span class="text-secondary font-bold mr-2">•</span> Offline Access (PWA)</div>
+    </div>
+
+    <!-- Tech Stack -->
+    <p class="text-sm text-gray-600 mb-3">
+      <span class="font-semibold">Tech Stack:</span> Django, JavaScript, Tailwind CSS, HTML, Service Workers
+    </p>
+
+    <!-- Link -->
+    <a href="https://bullskingdom.onrender.com/" class="text-accent hover:underline font-medium" target="_blank">
+      Visit Website
+    </a>
+  </div>
+</section>
+
+
+    <!-- Evergreen Travels -->
+    <section class="bg-white shadow-md rounded-xl overflow-hidden md:flex gap-6 p-6" data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/evergreen.png" alt="Evergreen Website Screenshot"
+           class="w-full md:w-1/3 h-64 object-contain bg-white p-2 rounded-lg">
+      <div class="flex-1 mt-4 md:mt-0">
+        <h2 class="text-2xl font-semibold text-primary mb-2">Evergreen Travels Website</h2>
+        <p class="text-text mb-3">
+          A clean, static site for Evergreen Travels to showcase destinations and services. Optimized for speed, SEO, and cross-device accessibility.
+        </p>
+        <p class="text-sm text-gray-600 mb-2"><span class="font-semibold">Tech:</span> HTML, CSS, JS</p>
+      </div>
+    </section>
+
+    <!-- Hexacore Dynamics -->
+    <section class="bg-white shadow-md rounded-xl overflow-hidden md:flex gap-6 p-6" data-aos="fade-up" data-aos-delay="300">
+      <img src="assets/hexacoreLOGO.png" alt="Hexacore Website Screenshot"
+           class="w-full md:w-1/3 h-64 object-contain bg-white p-2 rounded-lg">
+      <div class="flex-1 mt-4 md:mt-0">
+        <h2 class="text-2xl font-semibold text-primary mb-2">Hexacore Dynamics Site</h2>
+        <p class="text-text mb-3">
+          A business-focused static website for Hexacore Dynamics to present their services and brand. Fully responsive with smooth navigation and contact links.
+        </p>
+        <span class="inline-block bg-secondary text-white px-3 py-1 text-sm rounded-full mb-2">Business Site</span>
+        <p class="text-sm text-gray-600 mb-2"><span class="font-semibold">Tech:</span> HTML, CSS, JS</p>
+        <a href="https://hexacoredynamics.netlify.app" class="text-accent hover:underline font-medium" target="_blank">Visit Website</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-6 text-center mt-12">
+    <p>&copy; 2025 Irfan | All rights reserved</p>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <a href="#top" class="bg-accent text-white p-3 rounded-full shadow-lg hover:bg-yellow-500 transition" title="Back to Top">
+      ↑
+    </a>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script src="script.js"></script>
+</body>
+</html>

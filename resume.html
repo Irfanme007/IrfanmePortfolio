@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irfan | Full Stack Developer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            black: '#000000',
+            dark: '#121212',
+            accent: '#1DCD9F',
+            primary: '#169976',
+            light: '#f9f9f9',
+            muted: '#222222'
+          },
+        },
+      },
+    };
+  </script>
+
+  <meta name="description" content="Professional resume of Irfan, a full-stack developer skilled in Django, Python, JavaScript, and modern web technologies." />
+</head>
+
+<body class="bg-dark text-white font-sans relative">
+
+  <!-- Close Button -->
+  <a href="index.html" class="absolute top-5 right-6 text-gray-400 hover:text-red-500 text-3xl font-bold z-50">
+    &times;
+  </a>
+
+  <!-- Main Section -->
+  <section class="max-w-6xl mx-auto px-6 py-20 md:flex md:items-center md:justify-between gap-10">
+    
+    <!-- Image Section -->
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <img src="assets/irfan-image.png" alt="Irfan - Full Stack Developer" class="w-full rounded-lg shadow-xl object-cover border border-muted" />
+    </div>
+
+    <!-- Text Section -->
+    <div class="md:w-1/2 bg-[#1a1a1a] p-8 rounded-lg shadow-2xl">
+      <h1 class="text-3xl md:text-4xl font-bold text-primary mb-6">Why Hire Me</h1>
+      <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+        I’m a Full Stack Developer focused on building scalable, efficient, and user-centered web applications. Here's why I’d be a great fit for your team:
+      </p>
+      <ul class="list-disc list-inside text-gray-300 space-y-4 text-base">
+        <li>
+          <strong>Tech Stack Mastery:</strong> Proficient in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>SQL</strong>, and backend development with <strong>Python</strong> & <strong>Django</strong>.
+        </li>
+        <li>
+          <strong>Project Delivery:</strong> Successfully built apps like a <strong>Billing & Inventory System</strong> and a <strong>Gym PWA</strong>.
+        </li>
+        <li>
+          <strong>Quality Assurance:</strong> certified in <strong>manual testing</strong> and <strong>Selenium automation</strong> for bug-free, production-ready code.
+        </li>
+      </ul>
+      <div class="mt-8">
+        <a href="assets/IrfanmeResume.pdf" download="Irfan_Resume.pdf"
+           class="inline-block bg-primary hover:bg-accent text-white font-semibold py-2.5 px-6 rounded-full transition duration-200 text-center">
+          Download Resume (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Floating Button -->
+  <a href="assets/IrfanmeResume.pdf" download="Irfan_Resume.pdf"
+     class="fixed bottom-6 right-6 bg-primary hover:bg-accent text-white font-bold py-3 px-6 rounded-full shadow-lg md:hidden transition duration-200 flex items-center justify-center">
+    Download Resume
+  </a>
+
+</body>
+</html>
