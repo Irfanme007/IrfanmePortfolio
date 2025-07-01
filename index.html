@@ -128,6 +128,16 @@
             </div>
         </form>
     </section>
+    <!-- Success Popup -->
+<div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+  <div class="bg-section p-8 rounded-2xl shadow-xl max-w-sm text-center">
+    <h2 class="text-2xl font-bold text-primary mb-4">Message Sent!</h2>
+    <p class="text-gray-300 mb-6">Thanks for reaching out. I'll get back to you soon.</p>
+    <button id="closePopup" class="bg-primary text-black px-6 py-2 rounded-lg hover:bg-primaryDark transition-all">
+      Close
+    </button>
+  </div>
+</div>
 
     <footer class="text-center py-8 text-sm text-gray-400 bg-black">
         © 2025 Irfan. All rights reserved.
@@ -139,6 +149,33 @@
             duration: 1000,
             once: true
         });
+    const form = document.getElementById('contact');
+    const popup = document.getElementById('popup');
+    const closeBtn = document.getElementById('closePopup');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        popup.classList.remove('hidden');
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    }).catch(error => {
+      console.error("Submit error:", error);
+      alert("An error occurred. Please try again.");
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.classList.add('hidden');
+  });
     </script>
     <script src="script.js"></script>
 </body>
